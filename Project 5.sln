@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Air Travel Info Site", "Air Travel Info Site\Air Travel Info Site.csproj", "{8D919245-E2CE-4B09-B454-E933A314397D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User Control", "User Control\User Control.csproj", "{56E93346-F7DC-410F-AA0A-B11967B495B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption Decryption", "DLL\Encryption Decryption.csproj", "{6706E5B3-8849-4BB2-BDFE-B16E7723B4D0}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D919245-E2CE-4B09-B454-E933A314397D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D919245-E2CE-4B09-B454-E933A314397D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D919245-E2CE-4B09-B454-E933A314397D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D919245-E2CE-4B09-B454-E933A314397D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E93346-F7DC-410F-AA0A-B11967B495B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E93346-F7DC-410F-AA0A-B11967B495B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E93346-F7DC-410F-AA0A-B11967B495B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E93346-F7DC-410F-AA0A-B11967B495B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6706E5B3-8849-4BB2-BDFE-B16E7723B4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6706E5B3-8849-4BB2-BDFE-B16E7723B4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6706E5B3-8849-4BB2-BDFE-B16E7723B4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6706E5B3-8849-4BB2-BDFE-B16E7723B4D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
