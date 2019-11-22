@@ -1,9 +1,11 @@
-﻿using System;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 
 namespace Hashing_DLL
 {
+    /// <summary>
+    /// Implements hashing functionalities for password handling.
+    /// </summary>
     public class Hashing
     {
         private static int SALTLENGTH = 16;
@@ -41,7 +43,7 @@ namespace Hashing_DLL
             pw.CopyTo(saltedPassword, s.Length);
 
             // Hash the salted password.
-            HashAlgorithm hashAlgorithm = SHA1CryptoServiceProvider.Create();
+            HashAlgorithm hashAlgorithm = SHA256.Create();
             byte[] hashedAndSaltedPW = hashAlgorithm.ComputeHash(saltedPassword);
 
             // Convert the byte array into string for storage
