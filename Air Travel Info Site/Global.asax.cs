@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
@@ -27,9 +28,12 @@ namespace Air_Travel_Info_Site
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
         {
-            if (HttpContext.Current.User.Identity.IsAuthenticated)
+            HttpCookie httpCookie = HttpContext.Current.Request.Cookies[FormsAuthentication.FormsCookieName];
+            if (httpCookie != null)
             {
-                FormsIdentity formsIdentity = (FormsIdentity)HttpContext.Current.User.Identity;
+                FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(httpCookie.Value);
+                GenericPrincipal principal = new GenericPrincipal(new GenericIdentity(ticket.Name), new string[] { ticket.UserData });
+                Context.User = principal;
             }
         }
 

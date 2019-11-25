@@ -23,6 +23,9 @@
                     <td />
                     <td><asp:Button ID="Submit" Text="Submit" OnClick="Submit_Clicked" runat="server" /></td>
                 </tr>
+                <tr>
+                    <td rowspan="2"><asp:Label ID="Errorlabel" runat="server" /></td>
+                </tr>
             </table>
         </div>
     </form>
